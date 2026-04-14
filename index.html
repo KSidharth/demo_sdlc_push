@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Utility</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Multiplication Calculator</h1>
+            <p class="subtitle">Enter two numbers to calculate their product</p>
+        </header>
+
+        <main class="calculator-card">
+            <div class="input-group">
+                <label for="numberA">First Number</label>
+                <input 
+                    type="number" 
+                    id="numberA" 
+                    placeholder="Enter first number"
+                    step="any"
+                    required
+                    aria-label="First number input"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="numberB">Second Number</label>
+                <input 
+                    type="number" 
+                    id="numberB" 
+                    placeholder="Enter second number"
+                    step="any"
+                    required
+                    aria-label="Second number input"
+                >
+            </div>
+
+            <button 
+                type="button" 
+                id="submitBtn" 
+                class="submit-btn"
+                aria-label="Calculate product"
+            >
+                Submit
+            </button>
+
+            <div id="resultField" class="result-field" style="display: none;">
+                <div class="result-label">Result:</div>
+                <div id="resultValue" class="result-value"></div>
+            </div>
+
+            <div id="errorMessage" class="error-message" style="display: none;"></div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Multiplication Utility</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
